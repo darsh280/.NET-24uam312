@@ -1,0 +1,60 @@
+Entity framework is a tool in .NET that help us work with database using C# code instead of Sql queries.
+Why need Entity (Advantages)
+    - less code
+    - fast development
+    - easy to maintain
+
+when we use sql - time consuming
+                - error chances are high
+                - highly complex
+
+Types - Entity framework vs Entity framework core
+        EF older version - heavy - only for windows
+        EF core advanced version  - light weight - cross platform working(windows, macos, linux)
+
+What is ORM(Object relational mapping)
+- It mapps C# classes to database tables and object to row
+- Example 
+public class Student{
+    public string name;
+    public int id {get;set;}
+    public Name{
+        get{return name;}
+        set{name = value;}
+    }
+}
+
+There are three types of coding approach
+1. Code first approach - start with coding 
+- create c# classes database is created automatically
+
+2. Database first approach -
+- if database already exist generate c# classes from DB
+
+3.Model first  
+- Design model first then DB create
+
+Q. how many types of coding approach
+
+Important
+DBContext 
+- DBContext is a main class that connects your application to the Database
+- DBContextis bridge between application and database
+
+public DbSet <Student> students {get; set};
+
+Migration 
+Migration is used to create and update database structure automatically.
+used to add property in class
+
+Example - 
+public string email{get; set};
+migration update the database table add new column
+
+What is CRUD operation 
+Create - insert 
+Read - fetch 
+Update - modify
+Delete - remove
+
+Model(student class) - connectivity(DBContext) - migration - run application 

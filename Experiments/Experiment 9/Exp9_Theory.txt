@@ -1,0 +1,52 @@
+//command to create webAPI project - dotnet new webapi -n project_name
+
+Q.What is web api ?
+Q.What is API ?
+Q. How to map the controller to app
+
+Web API - communication between frontend and backend.
+Example - Swiggy , Instagram 
+
+REST API - uses HTTP methods, works with json
+HTTP methods 
+get - fetch data
+Example -  view Student 
+
+post - create new data 
+Example - add new Student 
+
+put - update 
+Example - update student name etc.
+
+delete - remove data 
+
+Web api - communication
+contarollers - handler (brain)
+http methods - actions
+swagger - testing tool
+
+Activities -
+1. What is web api and rest api deep study with examples.
+2. learn HTTP methods with proper examples
+
+Q. Why we use dotnet clean 
+
+Swagger - test api without frontend 
+
+To run code  - dotnet clean 
+	       dotnet build
+	       dotnet run
+on browser run - http://localhost:5200/api/student
+
+Activity - database 
+users table - student name column by using dotnet fetch 
+
+
+Activity 
+1. Which http methods we are using what is out endpoint , what response we get
+2. Understand the flow of web API with swagger
+3.when we add new student or data it is quickly displayed in the get methods how it is done without connecting the database
+
+Activity 
+connect to db use angular for frontend 
+create one component use dropdown that should display the student list

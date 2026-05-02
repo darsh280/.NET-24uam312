@@ -1,0 +1,109 @@
+
+Activity 1 - Why MVC used in companies
+
+- Separates the model , view and controller
+- Model -> handles data and database logic
+- View -> Handles UI
+- Controller -> handles user request and business logic
+- MVC is used in companies to separate the application logic into model, view and controller
+ making applications easier to manitain , develop and scale by different teams.
+Real Time example - online shopping website
+1. Model - Stores product details, prices, user data, orders in database.
+2. View - Product page UI showing images, price, “Add to Cart” button.
+3. Controller - When user clicks Add to Cart, controller receives request, 
+		updates cart data using model and returns updated view.
+
+
+Activity 2 - What is MVC folder structure
+
+The MVC folder structure is the way where files are organized in an MVC application so that
+Model, View and controller are separated.This makes the project easy to manage and understand.
+Basic MVC folder structure
+Project
+│
+├── Models
+│   └── UserModel.cs
+│   └── ProductModel.cs
+│
+├── Views
+│   └── Home
+│       └── Index.html
+│       └── About.html
+│   └── Product
+│       └── ProductList.html
+│
+├── Controllers
+│   └── HomeController.cs
+│   └── ProductController.cs
+│
+├── wwwroot / public
+│   └── css
+│   └── js
+│   └── images
+│
+├── Config / Routes
+│   └── route configuration
+│
+└── Main Application File
+
+
+Activity 3 - What is routing in MVC
+
+-Routing in MVC (Model–View–Controller) is the process that maps a 
+URL request to a specific controller and action method in the application.
+-Routing decides which controller and method should handle the user's request.
+
+How Routing Works
+1.User enters a URL in the browser.
+2.The routing system checks the URL pattern.
+3.It finds the correct Controller and Action method.
+4.The controller processes the request and returns a View.
+
+Basic url structure in MVC - domain.com/{Controller}/{Action}/{id}
+
+Real time example - > Suppose a user visits: www.shop.com/Product/List
+	Routing will send the request to: ProductController → List() method
+
+
+MOST IMP INTERVIEW QUESTION
+Activity 4 - What is the difference between MVC and Razor pages 
+
+- MVC is a design pattern that separates an application into Model, View, and Controller,
+while Razor Pages is a page-based framework where each page handles its own request and logic. 
+MVC is preferred for large applications, whereas Razor Pages is simpler and suitable for small or page-focused applications.
+
+| Feature          | MVC (Model–View–Controller)                     | Razor Pages                                                     |
+| -----------------| ------------------------------------------------| --------------------------------------------------------------- |
+|Architecture      | Uses three components: Model, View, Controller  | Uses page-based architecture                                    |
+|File Structure    | Separate folders for Models, Views, Controllers | Each page has .cshtml and .cshtml.cs (code-behind) together     |
+|Best For          | Large and complex applications                  | Simple or page-focused applications                             |
+|Control Flow      | Controller handles requests and returns a view  | Page itself handles the request                                 |
+|Code Organization | Logic in Controller UI in View                  | UI and page logic are closer together                           |
+|Development Speed | Slightly more complex to develop                | Faster and simpler development                                  | 
+
+
+Activity 5 - When we click on customer menu what happens in code (workflow)
+
+When the user clicks the Customer menu, the browser sends a request to /Customer/Index. 
+MVC routing maps the request to CustomerController.Index(), the controller processes the request, 
+optionally fetches data from the model, returns the view, and the view generates HTML which is sent back to the browser.
+
+User clicks Customer link
+        ↓
+Browser sends request /Customer/Index
+        ↓
+Routing identifies CustomerController
+        ↓
+CustomerController.Index() executes
+        ↓
+Controller calls Model (optional)
+        ↓
+Model fetches data from Database
+        ↓
+Controller returns View
+        ↓
+View generates HTML
+        ↓
+HTML response sent to Browser
+        ↓
+Customer Page displayed

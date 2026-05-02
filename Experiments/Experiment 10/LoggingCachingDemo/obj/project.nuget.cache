@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "vnfG9Ewhn3g=",
+  "success": true,
+  "projectFilePath": "D:\\DotNet\\.NET\\Experiments\\Experiment 10\\LoggingCachingDemo\\LoggingCachingDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\manea\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.3\\microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512",
+    "C:\\Users\\manea\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
